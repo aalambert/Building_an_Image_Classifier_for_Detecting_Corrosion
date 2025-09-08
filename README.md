@@ -3,9 +3,9 @@
 
 ## Problem Statement
 
-Corrosion of oilfield equipment and processing facilities is a common occurance that can pose a serious threat to the integrity of the facilities. Direct total costs due to corrosion are in the billions of dllars each year. Identifying corrosion is the first step in the analysis and prevention of corrosion-based failures. Visual inspection of corrosion can give insight into the degree of corrosion that is occuring. $ ~{1} $ It is hoped to be able to use computer vision in order to be able to identfy corrosion onsite. 
+Corrosion of oilfield equipment and processing facilities is a common occurance that can pose a serious threat to the integrity of the facilities. Direct total costs due to corrosion are in the billions of dollars each year. Identifying corrosion is the first step in the analysis and prevention of corrosion-based failures. Visual inspection of corrosion can give insight into the degree of corrosion that is occuring.$~{1}$ It is hoped to be able to use computer vision in order to be able to identify corrosion onsite. 
 
-This project's goal is demonstrate proof of concept that computer vision can be used to indentify corrosion. Due to the lack of availability of open oilfield corrosion datasets, this project will use a generlized multi-class corrosion dataset with 5 differebt classes of corrosion. This dataset  has images that have been annotated with expert corrosion ratings obtained over 10 years of laboratory corrosion testing by material scientists. $ ~{2} $  
+This project's goal is demonstrating proof of concept that computer vision can be used to identify corrosion. Due to the lack of availability of open oilfield corrosion datasets, this project will use a generalized multi-class corrosion dataset with 5 different classes of corrosion. This dataset has images that have been annotated with expert corrosion ratings obtained over 10 years of laboratory corrosion testing by material scientists.$~{2}$  
 
 The goal is to build an image classification model to detect corrosion from images. The model should classify images into multiple categories (5 different corrosion degrees, 5 being max corrosion and 9 being very little corrosion). The metric is to beat the baseline of 20%. 
 
@@ -18,7 +18,7 @@ The goal is to build an image classification model to detect corrosion from imag
 
 ## Data Source
 
-The data source is from WPI-ARL (Worcestar Polytechnic Institute):
+The data source is from WPI-ARL (Worcester Polytechnic Institute):
 
 #### https://arl.wpi.edu/corrosion_dataset/
 
@@ -69,7 +69,7 @@ PyTorch was used to efficiently preprocess and transform the data to prepare the
 Future work should include:
 
 - Collect more images to improve the accuracy of the model.
-- Experiment with the augmentation parameters to see if accuracy can be improved. A very aggresive augmentation transform was used. This could be introducing noise into the model.
+- Experiment with the augmentation parameters to see if accuracy can be improved. A very aggressive augmentation transform was used. This could be introducing noise into the model.
 - Expand technology to look at oilfield corrosion
 - Once expanded to oilfield corrosion, build a dashboard or visualization interface for the end users, i.e. the oilfield operators.
 
